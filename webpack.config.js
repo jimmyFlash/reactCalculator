@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const bundlePath = path.resolve(__dirname, "/dist/");
+const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   entry: "./src/index.js",// tells Webpack where our application starts and where to start bundling our files
@@ -47,7 +47,8 @@ module.exports = {
   */
   devServer: {
     contentBase: path.join(__dirname,'public'),
-    port: 3000
+    port: 3000,
+    publicPath: "http://localhost:3000/dist"
   },
   /*
   use Hot Module Replacement so we don’t have to constantly refresh to see our changes.

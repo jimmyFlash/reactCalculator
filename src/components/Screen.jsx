@@ -8,8 +8,8 @@ import PropTypes from 'prop-types'; // ES6
 const Screen = (props) => {
   return (
     <div className="screen">
-      <ScreenRow value={props.question}/>
-      <ScreenRow value={props.answer}/>
+      <ScreenRow value={props.question} class="input-screen"/>
+      <ScreenRow value={props.answer} class="output-screen"/>
     </div>
   );
 }

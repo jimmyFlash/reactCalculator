@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'; // ES6
 const ScreenRow = (props) => {
   return (
     <div className="screen-row">
-      <input type="text" readOnly value={props.value}/>
+      <input  type="text" readOnly value={props.value} className={props.class}/>
     </div>
   )
 }

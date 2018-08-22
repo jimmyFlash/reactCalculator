@@ -1,6 +1,7 @@
 import React from 'react'; // import react module
 import Screen from './screen'; // Import our screen component from this directory
 import Button from './button'; // Import our button component from this directory
+import ButtonSpecial from './ButtonSpecial'
 
 // create a class which extends react component
 class Frame extends React.Component {
@@ -64,32 +65,32 @@ class Frame extends React.Component {
           <Screen  question={this.state.question} answer={this.state.answer}/>
 
       
-          <Button className=' btn-primary' label={'1'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'2'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'3'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'4'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-info' label={'-'} handleClick={this.handleClick} type='action' />
-          <Button className=' btn-info' label={'+'} handleClick={this.handleClick} type='action' />
+          <Button className='btn-primary' label={'1'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'2'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'3'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'4'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-info' label={'-'} handleClick={this.handleClick} type='action' />
+          <Button className='btn-info' label={'+'} handleClick={this.handleClick} type='action' />
         
 
         
-          <Button className=' btn-primary' label={'5'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'6'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'7'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'8'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-info' label={'*'} handleClick={this.handleClick} type='action' />
-          <Button className=' btn-info' label={'/'} handleClick={this.handleClick} type='action' />
+          <Button className='btn-primary' label={'5'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'6'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'7'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'8'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-info' label={'*'} handleClick={this.handleClick} type='action' />
+          <Button className='btn-info' label={'/'} handleClick={this.handleClick} type='action' />
       
 
         
-          <Button className=' btn-primary' label={'9'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'.'} handleClick={this.handleClick} type='input' />
-          <Button className=' btn-primary' label={'0'} handleClick={this.handleClick} type='input' />
-        
-        <div className="btn-row">
-          <Button className=' btn-warning' label={'cls'} handleClick={this.handleClick} type='action' />
-          <Button className=' btn-success'label={'='} handleClick={this.handleClick} type='action' />
-        </div>
+          <Button className='btn-primary' label={'9'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'.'} handleClick={this.handleClick} type='input' />
+          <Button className='btn-primary' label={'0'} handleClick={this.handleClick} type='input' />
+          <div className="btn-row">
+            <ButtonSpecial className='btn-special-left' label={'cls'} handleClick={this.handleClick} direction='left' />
+            <ButtonSpecial className='btn-special-right' label={'='} handleClick={this.handleClick} direction='right' />
+          </div>
+
       </div>
     );
   }

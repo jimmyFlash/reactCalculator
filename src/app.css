@@ -127,8 +127,8 @@ body {
 }
 
 .btn-special-left:hover, .btn-special-right:hover  {
-  color: #37474f;
-  background-color:coral;
+  /* color: #37474f; */
+  background-color:crimson;
 }
 
 .a-btn {
@@ -142,5 +142,5 @@ body {
 
 .a-btn:hover {
   color: #37474f;
-  background-color:brown;
+  background-color:gold;
 }
